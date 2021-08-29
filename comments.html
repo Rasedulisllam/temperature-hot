@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <style>
+        #comments{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 2rem;
+            grid-row-gap: 2rem;
+            width: 80%;
+            margin:20px auto;
+        }
+        .comment{
+            border:1px solid yellowgreen;
+            border-radius: 10px;
+            padding:1rem;
+        }
+        .comment-details{
+            width:60%;
+            margin:2rem auto;
+            border:1px solid green;
+            border-radius: 10px;
+            padding:3rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the button to show some comments</h1>
+    <button onclick="loadComments()">load comments</button>
+    <div id="comment-details">
+
+    </div>
+    <div id="comments">
+
+    </div>
+    <script src="js/comments.js"></script>
+</body>
+</html>
